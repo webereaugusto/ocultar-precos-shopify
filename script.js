@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const p = document.createElement('p');
     const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`${WHATSAPP_MESSAGE} ${productTitle} - ${url}`)}`;
-    p.innerHTML = `📱 Consulte o preço pelo WhatsApp <a href="${whatsappLink}" target="_blank" rel="noopener" style="color:#25D366;text-decoration:none;font-weight:bold;">(Clique aqui)</a>`;
+    p.innerHTML = `<a href="${whatsappLink}" target="_blank" rel="noopener" style="color:white;text-decoration:none;font-weight:normal;font-size:12px;background-color:#25D366;padding:5px;border-radius:6px;">Consulte pelo Whatsapp</a>`;
     wrapper.appendChild(p);
 
     if (titleEl && titleEl.parentNode) {
